@@ -8,7 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/gc29198801f342469b50ec43585c6-h_lv32oqmu.jpg" type="image/x-icon">
   <meta name="description" content="Providing top-notch cleaning services for homes and offices. Expert deep cleaning and more.">
-  <title>Professional Cleaning Services</title>
+  <title>Becks Cleaning Services</title>
+
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://r.mobirisesite.com/393327/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1713316957066">
   <link rel="stylesheet" href="https://r.mobirisesite.com/393327/assets/bootstrap/css/bootstrap.min.css?rnd=1713316957066">
   <link rel="stylesheet" href="https://r.mobirisesite.com/393327/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1713316957066">
@@ -21,7 +25,52 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;700&display=swap&display=swap"></noscript>
   <link rel="stylesheet" href="https://r.mobirisesite.com/393327/assets/css/mbr-additional.css?rnd=1713316957066" type="text/css">
   
-  
+  <style>
+      .modal-content {
+        border-radius: 0;
+        background-color: #f8f9fa;
+    }
+    .modal-header {
+        border-bottom: none;
+        background-color: #0bb0d2 ;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        font-size: large;
+    }
+    
+    .form-control {
+        border-radius: 0;
+        border-color: #ced4da;
+    }
+    .form-group label {
+        font-weight: bold;
+        color: #333;
+    }
+    .btn-success {
+        border-radius: 0;
+        background-color: #128d5e;
+        border-color: #128d5e;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+    .btn-primary:focus, .btn-primary.focus {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    }
+
+
+    .modal-dialog{
+        height: auto;
+        border-radius: 50px;
+    }
+
+    .modal-content, .btn-success ,.btn-danger{
+        border-radius: 50px;
+    }
+
+  </style>
   
   
 </head>
@@ -59,7 +108,7 @@
 						<a class="nav-link link text-info text-primary display-5" href="index.html#contact-form-3-ua9BV2yhcU">Contacts</a>
 					</li></ul>
 				
-				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="https://mobiri.se"></a></div>
+				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="#"></a></div>
 			</div>
 		</div>
 	</nav>
@@ -75,8 +124,60 @@
           <strong><br></strong><br><strong>Welcome to Becks</strong><br><strong>Cleaning Service<br></strong><strong><br></strong></h1>
         
         <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-5">Let Us Sparkle Your Space with Professional Cleaning Services</p>
-        <div class="mbr-section-btn"><a class="btn btn-white-outline display-7">Book Now</a></div>
-      </div>
+       
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="mbr-section-btn"><a class="btn btn-white-outline display-7" data-toggle="modal" data-target="#bookingModal">Book Now</a></div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bookingModalLabel"><span style="text-align: center;">Booking Form</span></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" class="form-control" id="fullname" placeholder="Enter Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="cleaning-type">Cleaning Type</label>
+                        <input type="text" class="form-control" id="cleaning-type" placeholder="Enter Cleaning Type">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Enter Message"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="one btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="two btn btn-success">Submit</button>
+            </div>
+        </div>
+    </div>
+</div> </div>
     </div>
   </div>
 </section>
@@ -635,6 +736,11 @@
   <script src="assets/vimeoplayer/player.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   
   
   
